@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "frontend": {
+      "matchCondition": {
+        "route": "/{*restOfPath}"
+      },
+      "backendUri": "http://127.0.0.1:4200/{restOfPath}"
+    },
+    "functions": {
+      "matchCondition": {
+        "route": "/api/{*restOfPath}"
+      },
+      "backendUri": "http://localhost:7071/api/{restOfPath}"
+    }
+  }
+}

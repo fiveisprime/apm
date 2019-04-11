@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ng serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:7071/",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to Node Functions",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "preLaunchTask": "func: host start"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Serverless Web App",
+      "configurations": ["Attach to Node Functions", "ng serve"]
+    }
+  ]
+}
