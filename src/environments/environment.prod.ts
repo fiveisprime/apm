@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  productUrl: 'api/products/products.json'
+  productUrl: 'https://maherna-apm-api.azurewebsites.net/api/products/'
 };
