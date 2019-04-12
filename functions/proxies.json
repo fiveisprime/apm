@@ -5,7 +5,7 @@
       "matchCondition": {
         "route": "/{*restOfPath}"
       },
-      "backendUri": "http://127.0.0.1:4200/{restOfPath}"
+      "backendUri": "https://mahernaapm.z22.web.core.windows.net/{restOfPath}"
     },
     "functions": {
       "matchCondition": {

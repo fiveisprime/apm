@@ -9,17 +9,17 @@ import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        ProductListComponent,
-        StarComponent,
-        ConvertToSpacesPipe
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpClientModule
-    ],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    ProductListComponent,
+    StarComponent,
+    ConvertToSpacesPipe
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

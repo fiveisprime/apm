@@ -11,18 +11,18 @@ import { environment } from '../../environments/environment'
   providedIn: 'root'
 })
 export class ProductService {
-    private productUrl: string = environment.productUrl;
+  private productUrl: string = environment.productUrl;
 
-    constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-    getProducts(): Observable<IProduct[]> {
-        return this.http.get<IProduct[]>(this.productUrl).pipe(
-            catchError(this.handleError)
-        );
-    }
+  getProducts() {
+    return this.http.get<IProduct[]>(this.productUrl).pipe(
+      catchError(this.handleError)
+    );
+  }
 
-    handleError(err: HttpErrorResponse) {
-        console.error(err);
-        return throwError(err.statusText);
-    }
+  handleError(err: HttpErrorResponse) {
+    console.error(err);
+    return throwError(err.statusText);
+  }
 }
