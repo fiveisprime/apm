@@ -3,8 +3,9 @@
   "configurations": [
     {
       "name": "ng serve",
-      "type": "chrome",
+      "type": "edge",
       "request": "launch",
+      "version": "dev",
       "preLaunchTask": "npm: start",
       "url": "http://localhost:7071/",
       "webRoot": "${workspaceFolder}"

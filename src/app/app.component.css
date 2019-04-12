@@ -1,3 +1,7 @@
 .nav-link {
   font-size: large;
 }
+
+[role=main]{
+  margin: 40px 20px 0;
+}
