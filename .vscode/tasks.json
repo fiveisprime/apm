@@ -43,6 +43,15 @@
       }
     },
     {
+      "type": "shell",
+      "label": "npm build:prod",
+      "command": "npm run build:prod",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
       "type": "npm",
       "script": "start",
       "isBackground": true,

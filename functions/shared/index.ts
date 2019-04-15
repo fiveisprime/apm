@@ -1,4 +1,4 @@
-const { CosmosClient } = require('@azure/cosmos');
+import { CosmosClient } from '@azure/cosmos';
 
 const endpoint = process.env.AZURE_COSMOS_ENDPOINT;
 const masterKey = process.env.AZURE_COSMOS_MASTER_KEY;
