@@ -44,8 +44,8 @@
     },
     {
       "type": "shell",
-      "label": "npm build:prod",
-      "command": "npm run build:prod",
+      "label": "npm build:production",
+      "command": "npm run build:production",
       "problemMatcher": [],
       "options": {
         "cwd": "${workspaceFolder}"

@@ -8,5 +8,5 @@
     "bin": true
   },
   "debug.internalConsoleOptions": "neverOpen",
-  "azureStorage.preDeployTask": "npm build:prod"
+  "azureStorage.preDeployTask": "npm build:production"
 }
