@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/maherna/APM/_apis/build/status/APM-CI?branchName=master)](https://dev.azure.com/maherna/APM/_build/latest?definitionId=11&branchName=master)
+
 This app is built using Angular on the front end and Azure Functions on the back
 end with data coming from Azure Cosmos DB.
 
