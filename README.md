@@ -15,7 +15,7 @@ You'll need the following installed to run this application locally.
 This app uses both Angular and Azure Functions and some configuration is
 required to connect the two together when running locally.
 
-
+![Application Architecture](./app-diagram.png)
 
 # Running This Example
 
@@ -39,10 +39,10 @@ exactly how the app will run when deployed.
 **The compound launch configuration makes it possible to hit breakpoints for
 both the Angular app and the Azure Functions app.**
 
-## Configure Local Settings
+## Configuration
 
 This example requires a Cosmos DB SQL database. To connect to the database, use
-`./functions/local.settings.json` to configure the connection to the database.
+`functions/local.settings.json` to configure the connection to the database.
 
 You also need to enable CORS for local development, which is also done in local
 settings as seen below.
@@ -63,7 +63,18 @@ settings as seen below.
 ```
 
 You'll need to populate the database with the JSON found in
-`./src/api/products/products.json`.
+`src/api/products/products.json`.
+
+You'll also need to update the following files once you have you Function App
+and Azure Storage account created.
+
+[`functions/proxies.json`](https://github.com/fiveisprime/apm/blob/master/functions/proxies.json#L8)
+Update the `backendUri` value with the URL copied from the Storage Account you
+created to deploy the client code.
+
+[`src/environments/environment.prod.ts`](https://github.com/fiveisprime/apm/blob/master/src/environments/environment.prod.ts#L3)
+Update `productUrl` value with the URL copied from the Azure Function you
+deployed from the `functions` directory.
 
 # Deploying to Azure
 
