@@ -54,7 +54,7 @@ settings as seen below.
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "AZURE_COSMOS_ENDPOINT": "https://<databasename>.documents.azure.com:443/",
     "AZURE_COSMOS_MASTER_KEY": "<masterkey>",
-    "AZURE_COSMOS_DATABASE_ID": "Products"
+    "AZURE_COSMOS_DATABASE_ID": "Product"
   },
   "Host": {
     "CORS": "*"
