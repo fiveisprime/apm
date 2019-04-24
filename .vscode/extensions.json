@@ -3,6 +3,7 @@
     "ms-azuretools.vscode-azurefunctions",
     "ms-azuretools.vscode-azurestorage",
     "ms-azuretools.vscode-cosmosdb",
-    "msjsdiag.debugger-for-edge"
+    "msjsdiag.debugger-for-edge",
+    "johnpapa.angular2"
   ]
 }
