@@ -21,7 +21,7 @@
              *ngIf="products && products.length">
         <thead>
           <tr>
-            <th>Image</th>
+            <!-- <th>Image</th> -->
             <th>Product</th>
             <th>Code</th>
             <th>Available</th>
@@ -31,12 +31,12 @@
         </thead>
         <tbody>
           <tr *ngFor="let product of filteredProducts">
-            <td>
+            <!-- <td>
               <img [src]="product.imageUrl"
                    [title]="product.productName"
                    [style.width.px]="imageWidth"
                    [style.margin.px]="imageMargin">
-            </td>
+            </td> -->
             <td>
               <!-- <a [routerLink]="["/products", product.productId]"> -->
                 {{ product.productName }}

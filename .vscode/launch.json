@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ng serve",
+      "name": "Attach Angular app",
       "type": "edge",
       "request": "launch",
       "version": "dev",
@@ -21,7 +21,7 @@
   "compounds": [
     {
       "name": "Serverless Web App",
-      "configurations": ["Attach to Node Functions", "ng serve"]
+      "configurations": ["Attach to Node Functions", "Attach Angular app"]
     }
   ]
 }
