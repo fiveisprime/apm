@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Attach Angular app",
+      "name": "Launch Angular",
       "type": "edge",
-      "request": "launch",
       "version": "dev",
+      "request": "launch",
       "preLaunchTask": "npm: start",
       "url": "http://localhost:4200/",
       "webRoot": "${workspaceFolder}"
@@ -21,7 +21,7 @@
   "compounds": [
     {
       "name": "Serverless Web App",
-      "configurations": ["Attach to Node Functions", "Attach Angular app"]
+      "configurations": ["Attach to Node Functions", "Launch Angular"]
     }
   ]
 }
