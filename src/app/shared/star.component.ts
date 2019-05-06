@@ -1,9 +1,9 @@
 import {
   Component,
   OnChanges,
+  EventEmitter,
   Input,
-  Output,
-  EventEmitter
+  Output
 } from '@angular/core';
 
 @Component({
@@ -13,7 +13,7 @@ import {
 })
 export class StarComponent implements OnChanges {
   @Input() rating: number;
-  @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
+  @Output() ratingClicked = new EventEmitter<string>();
   starWidth: number;
 
   OnClick(): void {
