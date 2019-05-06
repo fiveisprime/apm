@@ -18,7 +18,9 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": [],
+            "assets": [
+              "src/api/products/products.json"
+            ],
             "styles": [
               "src/styles.css"
             ],
