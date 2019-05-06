@@ -1,7 +1,10 @@
-import { AzureFunction, Context, HttpRequest } from '@azure/functions'
-import { containers } from '../shared'
+import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+import { containers } from '../shared';
 
-const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+const httpTrigger: AzureFunction = async function(
+  context: Context,
+  req: HttpRequest
+): Promise<void> {
   if (req.method === 'GET') {
     const { result } = await containers.products.items.readAll().toArray();
 

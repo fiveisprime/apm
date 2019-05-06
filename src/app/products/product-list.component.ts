@@ -16,12 +16,14 @@ export class ProductListComponent implements OnInit {
   filteredProducts: IProduct[];
   errorMessage: string = '';
 
-  public get listFilter() : string {
+  public get listFilter(): string {
     return this._listFilter;
   }
-  public set listFilter(v : string) {
+  public set listFilter(v: string) {
     this._listFilter = v;
-    this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter): this.products;
+    this.filteredProducts = this.listFilter
+      ? this.performFilter(this.listFilter)
+      : this.products;
   }
 
   products: IProduct[];
@@ -34,7 +36,7 @@ export class ProductListComponent implements OnInit {
     filterBy = filterBy.toLocaleLowerCase();
 
     return this.products.filter((product: IProduct) => {
-      return product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1
+      return product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1;
     });
   }
 
