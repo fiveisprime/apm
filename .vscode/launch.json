@@ -2,9 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Angular",
+      "name": "Launch Angular in Edge",
       "type": "edge",
       "version": "dev",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200/",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Angular in Chrome",
+      "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
       "url": "http://localhost:4200/",
@@ -21,7 +29,7 @@
   "compounds": [
     {
       "name": "Serverless Web App",
-      "configurations": ["Attach to Node Functions", "Launch Angular"]
+      "configurations": ["Attach to Node Functions", "Launch Angular in Edge"]
     }
   ]
 }
