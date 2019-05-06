@@ -10,11 +10,11 @@ import { ProductService } from './product.service';
 export class ProductListComponent implements OnInit {
   private _listFilter: string;
 
-  pageTitle: string = 'Product List';
-  imageWidth: number = 50;
-  imageMargin: number = 2;
+  pageTitle = 'Product List';
+  imageWidth = 50;
+  imageMargin = 2;
   filteredProducts: IProduct[];
-  errorMessage: string = '';
+  errorMessage = '';
 
   public get listFilter(): string {
     return this._listFilter;
