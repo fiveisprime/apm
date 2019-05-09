@@ -1,7 +1,6 @@
 [![Build Status](https://dev.azure.com/maherna/APM/_apis/build/status/APM-CI?branchName=master)](https://dev.azure.com/maherna/APM/_build/latest?definitionId=11&branchName=master)
 
-This app is built using Angular on the front end and Azure Functions on the back
-end with data coming from Azure Cosmos DB.
+This app is built using Angular on the front end and Azure Functions on the back end with data coming from Azure Cosmos DB.
 
 # Getting Started
 
@@ -22,8 +21,7 @@ required to connect the two together when running locally.
 Once cloned, run `npm install` then open in VS Code and install the recommended
 extensions. Rename `functions/example.local.settings.json` to
 `functions/local.settings.json` and update the database connection settings with
-the endpoint and master key from your Cosmos DB database (using the native SQL
-API).
+the endpoint and master key from your Cosmos DB database (using the native SQL API).
 
 Open the app in VS Code and hit `F5` (from the menu: Debug > Start Debugging).
 
@@ -125,7 +123,17 @@ Once created and configured, you're prompted to choose the directory to deploy.
 Choose the `./dist` directory from the list and you're all will be built (in
 production mode) then deployed to storage.
 
+# Resources
+
+- [Static Site Tutorial](https://aka.ms/build-storetut)
+- [Serverless Tutorial](https://aka.ms/build-functut)
+- [VS Code Extensions](https://aka.ms/build-azext)
+- [Try the code](https://aka.ms/apm)
+- [Azure Dev Ops](https://aka.ms/build-azdo)
+
 # Credits
+
+Collaboration on this project is between Matt Hernandez and John Papa.
 
 Shout out to [Deborah Kurata](https://github.com/deborahk/) who wrote the
 original APM app that this example is built on.
