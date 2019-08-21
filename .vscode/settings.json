@@ -9,15 +9,5 @@
   },
   "debug.internalConsoleOptions": "neverOpen",
   "azureStorage.preDeployTask": "npm build:production",
-  "azureFunctions.templateFilter": "Verified",
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#d04649",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#37cb34",
-    "activityBarBadge.foreground": "#15202b",
-    "statusBar.background": "#b52e31",
-    "statusBarItem.hoverBackground": "#d04649",
-    "statusBar.foreground": "#e7e7e7"
-  }
+  "azureFunctions.templateFilter": "Verified"
 }
